@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class TicketBooking
+{
+  public static void main (String atgs[]){
+    int cost;
+    int totalCost;
+    System.out.println("Welcome to sai travels online bus booking");
+    Scanner sc= new Scanner(System.in);   
+    System.out.println("select a number to buy tickets for:\n1.Bhimavaram\n2.Palkollu\n3.Hyderabad\n4.Guntur\n5.chennai\n6.Rajahmundry\n7.vishakapatnam");
+    int choice =sc.nextInt();
+    System.out.println("Enter no.of tickets you want");
+    int noOfTickets = sc.nextInt();
+    
+    switch(choice){
+       case 1: cost=200;
+        totalCost=cost*noOfTickets;   
+        System.out.println("Total cost:"+totalCost);
+        break; 
+        case 2: cost=185;
+        totalCost=cost*noOfTickets;
+        System.out.println("total Cost:"+totalCost);
+        break;     
+        case 3: cost=400;
+        totalCost=cost*noOfTickets;
+        System.out.println("Total cost:"+totalCost);
+        break;
+         case 4: cost=300;
+        totalCost=cost*noOfTickets;
+        System.out.println("Total cost: "+totalCost);
+         break;
+         case 5: cost=270;
+        totalCost=cost*noOfTickets;
+        System.out.println("Total cost:"+totalCost);
+        break;
+         case 6: cost=600;
+        totalCost=cost*noOfTickets;
+        System.out.println("Total cost:"+totalCost);
+        break;  
+        case 7: cost=350;
+        totalCost=cost*noOfTickets;
+        System.out.println ("Total cost: "+totalCost);
+        break;   
+      }
+      for(int i=0;i<noOfTickets;i++){
+        System.out.println("Enter name");
+        String name=sc.nextLine(); 
+        sc.next();
+        System.out.println("Enter phone no: ");
+        int pNo=sc.nextInt();
+      }
+       System.out.println("Tickets have been booked successfully");
+       System.out.println("Thank you for visiting");
+  }
+ }
